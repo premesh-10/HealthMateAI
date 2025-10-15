@@ -1,0 +1,84 @@
+# ----------------------------------------
+# 🩺 HealthMate AI - FastAPI Backend .gitignore
+# ----------------------------------------
+
+# 🧩 Environment files
+.env
+.env.local
+*.env
+!.env.example   # keep only the example file in Git
+
+# 🐍 Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 📦 Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 🧰 IDE / Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 🧪 Test / Coverage outputs
+.coverage
+.tox/
+.nox/
+pytest_cache/
+htmlcov/
+.pytest_cache/
+.cache/
+
+# 📚 Build / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# 🗂️ Logs & temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.pid
+
+# 🗜️ Database / Data dumps
+*.sqlite3
+*.db
+*.sql
+*.csv
+
+# 📄 OS-specific
+.DS_Store
+Thumbs.db
+
+# 🐳 Docker / Containers
+docker-compose.override.yml
+*.pid
+*.tar
+*.sock
+
+# 🚀 Deployment / Secrets
+*.pem
+*.key
+*.crt
+.secret
+secrets.json
+
+# 📦 Dependency cache
+pip-wheel-metadata/
+pip-log.txt
+
+# 📁 Local tooling / cache
+mypy_cache/
+__pypackages__/
+.pyre/
+.pytype/
