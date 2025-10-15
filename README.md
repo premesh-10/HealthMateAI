@@ -101,7 +101,7 @@ Make sure you have the following installed:
    GEMINI_API_KEY=your_gemini_api_key
    MONGODB_URI=your_mongodb_connection_uri
    DB_NAME=healthmate_db
-   CORS_ORIGINS=http://localhost:3000
+   CORS_ORIGINS=http://localhost:8080
    ```
 
 3. **Run the backend**
