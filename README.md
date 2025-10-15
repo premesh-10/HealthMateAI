@@ -17,27 +17,57 @@ This monorepo contains both the **frontend (React + Vite)** and **backend (FastA
 
 ## 📁 Project Structure
 
+
 ```
 project-root/
 │
 ├── frontend/                     
+│   ├── node_modules/
 │   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── placeholder.svg
+│   │   └── robots.txt
 │   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   ├── pages/
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   └── vite-env.d.ts
+│   ├── .env
 │   ├── .env.example
+│   ├── .gitignore
+│   ├── bun.lockb
+│   ├── components.json
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
 │   ├── package.json
-│   ├── vite.config.ts
-│   └── ...
+│   ├── postcss.config.js
+│   ├── tailwind.config.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
 │
 ├── backend/
 │   ├── app/
+│   │   ├── __pycache__/
 │   │   ├── main.py
 │   │   └── triage_infer.py
+│   ├── .env
 │   ├── .env.example
+│   ├── .gitignore
 │   └── requirements.txt
 │
-├── Demo_video_HealthMateAI/
+├── Demo_video_HealthMateAI
 │
-└── README.md
+└── README.md                     # Project documentation and instructions
+
 ```
 
 ---
