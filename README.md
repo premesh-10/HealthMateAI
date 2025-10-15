@@ -1,4 +1,4 @@
-# 🩺 HealthMate AI — Monorepo
+# 🩺 HealthMate AI
 
 **HealthMate AI** is an intelligent healthcare assistant that helps users analyze symptoms, receive triage-level recommendations, and access quick, AI-powered medical insights.  
 This monorepo contains both the **frontend (React + Vite)** and **backend (FastAPI)** of the project.
