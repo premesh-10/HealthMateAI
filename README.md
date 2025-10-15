@@ -1,8 +1,17 @@
-# 🩺 HealthMate AI
-
+# 🩺 HealthMate AI 
 **HealthMate AI** is an intelligent healthcare assistant that helps users analyze symptoms, receive triage-level recommendations, and access quick, AI-powered medical insights.  
 This monorepo contains both the **frontend (React + Vite)** and **backend (FastAPI)** of the project.
-Note: This project is developed strictly for educational purposes and is not intended for professional medical diagnosis or treatment.
+
+> ⚠️ **Note:** This project is developed strictly for educational purposes and is **not intended for professional medical diagnosis or treatment**.
+
+---
+
+## 🎬 Demo Video
+
+🎥 **Watch the demo of HealthMate AI here:**  
+👉 [**Click to View on Google Drive**](https://drive.google.com/file/d/1aQ-99-tg6VqsXbDNgbk-9TTQOx3ABkP9/view?usp=sharing)
+
+*(The video demonstrates the setup process, symptom analysis flow, and AI triage recommendations.)*
 
 ---
 
@@ -12,52 +21,23 @@ Note: This project is developed strictly for educational purposes and is not int
 project-root/
 │
 ├── frontend/                     
-│   ├── node_modules/
 │   ├── public/
-│   │   ├── favicon.ico
-│   │   ├── placeholder.svg
-│   │   └── robots.txt
 │   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── hooks/
-│   │   ├── lib/
-│   │   ├── pages/
-│   │   ├── App.css
-│   │   ├── App.tsx
-│   │   ├── index.css
-│   │   ├── main.tsx
-│   │   └── vite-env.d.ts
-│   ├── .env
 │   ├── .env.example
-│   ├── .gitignore
-│   ├── bun.lockb
-│   ├── components.json
-│   ├── eslint.config.js
-│   ├── index.html
-│   ├── package-lock.json
 │   ├── package.json
-│   ├── postcss.config.js
-│   ├── tailwind.config.ts
-│   ├── tsconfig.app.json
-│   ├── tsconfig.json
-│   ├── tsconfig.node.json
-│   └── vite.config.ts
+│   ├── vite.config.ts
+│   └── ...
 │
 ├── backend/
 │   ├── app/
-│   │   ├── __pycache__/
 │   │   ├── main.py
 │   │   └── triage_infer.py
-│   ├── .env
 │   ├── .env.example
-│   ├── .gitignore
 │   └── requirements.txt
 │
-├── Demo_video_HealthMateAI
+├── Demo_video_HealthMateAI/
 │
-└── README.md                     # Project documentation and instructions
-
+└── README.md
 ```
 
 ---
@@ -86,8 +66,8 @@ Make sure you have the following installed:
    ```bash
    cp .env.example .env
    ```
-   Fill in your environment variables, e.g.:
-   ```
+   Fill in your environment variables:
+   ```bash
    GEMINI_API_KEY=your_gemini_api_key
    MONGODB_URI=your_mongodb_connection_uri
    DB_NAME=healthmate_db
@@ -99,7 +79,7 @@ Make sure you have the following installed:
    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
    ```
 
-   The backend will be live at: 👉 **http://127.0.0.1:8000**
+   The backend will be live at 👉 **http://127.0.0.1:8000**
 
 ---
 
@@ -120,7 +100,7 @@ Make sure you have the following installed:
    bun run dev
    ```
 
-   The frontend will be live at: 👉 **http://localhost:8080**
+   The frontend will be live at 👉 **http://localhost:8080**
 
    *(The Vite proxy automatically forwards API requests to the backend — see `vite.config.ts`.)*
 
@@ -128,7 +108,7 @@ Make sure you have the following installed:
 
 ## 🧩 Development Workflow
 
-- Start **backend** and **frontend** servers in separate terminals.  
+- Run **backend** and **frontend** servers in separate terminals.  
 - Frontend requests to `/api` are proxied to the FastAPI backend.  
 - Modify code in:
   - `frontend/src` → UI, components, and logic  
@@ -136,15 +116,14 @@ Make sure you have the following installed:
 
 ---
 
-
 ## 🎨 Frontend Customization
 
-- All assets and UI visuals are under:  
+- All assets and UI visuals are located under:  
   ```
   frontend/src/assets/
   ```
-- Built using **React**, **Vite**, **TypeScript**, **TailwindCSS**, and **shadcn/ui** for modular and scalable design.  
-- You can easily update colors, icons, and brand styling here.
+- Built with **React**, **Vite**, **TypeScript**, **TailwindCSS**, and **shadcn/ui** for modern and scalable design.  
+- You can easily update brand colors, typography, and UI components here.
 
 ---
 
@@ -190,29 +169,29 @@ Contributions are welcome!
 | Layer | Technology |
 |-------|-------------|
 | **Frontend** | React, Vite, TypeScript, TailwindCSS, shadcn/ui |
-| **Backend** | FastAPI, Python |
+| **Backend** | FastAPI (Python) |
 | **Database** | MongoDB Atlas |
-| **LLM** | Google Gemini API |
+| **AI Model** | Google Gemini API |
 | **Hosting (optional)** | Vercel / Render / Netlify |
 
 ---
 
 ## 🩵 License
 
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute.
+This project is licensed under the **MIT License** — you’re free to use, modify, and distribute it.
 
 ---
 
 ## 👨‍💻 Author
 
-**Developed by:** Premesh Yenduru 
-📧 *premesh.sai11@gmail.com*  
-
+**Developed by:** *Premesh Yenduru*  
+📧 *premesh.sai11@gmail.com*
 
 ---
 
 ## 💡 Summary
 
-HealthMate AI combines modern frontend design with AI-powered backend intelligence to deliver an intuitive health triage assistant.
-It’s lightweight, easy to deploy, and built with scalability in mind for future healthcare integrations.
-Note: This project is developed strictly for educational purposes and is not intended for professional medical diagnosis or treatment.
+**HealthMate AI** combines modern frontend design with AI-powered backend intelligence to deliver an intuitive health triage assistant.  
+It’s lightweight, scalable, and designed for educational use in exploring healthcare + AI integration.
+
+> 🩺 *Disclaimer: This application is not a substitute for professional medical advice, diagnosis, or treatment.*
